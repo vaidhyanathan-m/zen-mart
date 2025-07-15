@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bazaar</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="name">
+            <h1>Zen-Mart</h1>
+        </div>
+        <div class="sider">
+            <p>
+                <a href="ind.html">Home</a>
+            </p>
+            <p>
+                <a href="collection.html">Collections</a>
+            </p>
+            <p>
+                <a href="contact.html">Contact</a>
+            </p>
+        </div>
+        <div class="toggle">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+        <div class="menu">
+            <div class="close">
+                <i class="fa-solid fa-xmark"></i>
+            </div>
+            <div class="menu-items">
+                <p>
+                    <a href="ind.html">Home</a>
+                </p>
+                <p>
+                    <a href="collection.html">Collections</a>
+                </p>
+                <p>
+                    <a href="contact.html">Contact</a>
+                </p>
+            </div>
+        </div>
+    </nav>
+
+    <div class="searchbar">
+        <div class="bar1">
+            <input type="text" placeholder="Search" id="search">
+        </div>
+        <div>
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+    </div>
+
+    <div class="container" id="cont">
+        <div>
+            <img src="images/whitetshirt.jpg">
+            <h5>White T-Shirt</h5>
+            <b style="display: inline;">Rs.100</b>
+            <del style="display:inline ;">Rs.250</del><br>
+            <button onclick="adding(event)">Add to Cart</button>
+        </div>
+        <div>
+            <img src="images/blacktshirt.jpg">
+            <h5>Black T-Shirt</h5>
+            <b style="display: inline;">Rs.100</b>
+            <del style="display:inline ;">Rs.250</del><br>
+            <button onclick="adding(event)">Add to Cart</button>
+        </div>
+        <div>
+            <img src="images/whiteshirt.jpg">
+            <h5>White Shirt</h5>
+            <b style="display: inline;">Rs.300</b>
+            <del style="display:inline ;">Rs.500</del><br>
+            <button onclick="adding(event)">Add to Cart</button>
+        </div>
+        <div>
+            <img src="images/blackshirt.jpg">
+            <h5>Black Shirt</h5>
+            <b style="display: inline;">Rs.300</b>
+            <del style="display:inline ;">Rs.500</del><br>
+            <button onclick="adding(event)">Add to Cart</button>
+        </div>
+        <div>
+            <img src="images/blackjean.JPG">
+            <h5>Black Jean</h5>
+            <b style="display: inline;">Rs.700</b>
+            <del style="display:inline ;">Rs.1000</del><br>
+            <button onclick="adding(event)">Add to Cart</button>
+        </div>
+        <div>
+            <img src="images/bluejean.JPG">
+            <h5>Blue Jean
+            </h5>
+            <b style="display: inline;">Rs.700</b>
+            <del style="display:inline ;">Rs.1000</del><br>
+            <button onclick="adding(event)">Add to Cart</button>
+        </div>
+        <div>
+            <img src="images/blackformal.JPG">
+            <h5>Black Trousers</h2>
+                <b style="display: inline;">Rs.1000</b>
+                <del style="display:inline ;">Rs.1500</del><br>
+                <button onclick="adding(event)">Add to Cart</button>
+        </div>
+        <div>
+            <img src="images/greyformal.JPG">
+            <h5>Grey Trousers</h5>
+            <b style="display: inline;">Rs.1000</b>
+            <del style="display:inline ;">Rs.1500</del><br>
+            <button onclick="adding(event)">Add to Cart</button>
+        </div>
+    </div>
+
+    <div id="showcart">
+        <button class="btn"><h2>Go to Cart</h2></button>
+    </div>
+
+    <div id="cartbg" class="cartback">
+        <div id="orderbtn">
+            <h1>Your Cart!</h1>
+            <button id="placed">Order Now</button>
+        </div>
+        <div id="incart"></div>
+       
+    </div>
+
+    <div class="footer">
+        <h3>Zen-Mart</h3>
+        <p>Your go-to destination for the latest fashion trends and unbeatable deals!</p>
+        <i class="fa-brands fa-square-instagram"></i>
+        <i class="fa-brands fa-square-facebook"></i>
+        <i class="fa-brands fa-square-x-twitter"></i>
+        <p>@Zen_Mart_2024.com</p>
+    </div>
+    <script src="col.js"></script>
+    <script src="be.js"></script>
+</body>
+</html>
